@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Boulevar de las Frutas</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,14 +14,14 @@
                   <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Productos</a>
+                        <a class="nav-link active" aria-current="page" href="/productos">Productos</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Galeria</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Link
+                        Actividades
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                           <li><a class="dropdown-item" href="#">Blog</a></li>
@@ -35,8 +35,8 @@
                       </li>
                     </ul>
                     <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Buscar</button>
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                      <button class="btn btn-outline-light" type="submit">Buscar</button>
                     </form>
                   </div>
                 </div>

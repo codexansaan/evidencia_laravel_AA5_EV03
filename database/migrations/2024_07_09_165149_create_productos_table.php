@@ -18,7 +18,8 @@ return new class extends Migration
             $table->integer('stock');
             $table->double('precio');
             $table->string('descripcion');
-            
+            $table->string('imagen');
+
         });
     }
 

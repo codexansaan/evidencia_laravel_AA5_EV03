@@ -12,7 +12,8 @@ class ProductosController extends Controller
      */
     public function index()
     {
-        //
+        $produc = Producto::all();
+        return view('productos.index', compact('produc'));
     }
 
     /**
@@ -33,6 +34,9 @@ class ProductosController extends Controller
         $produc->stock = $request->input('stock');
         $produc->precio = $request->input('precio');
         $produc->descripcion = $request->input('descripcion');
+        if($request->hasFile('imagen')){
+            $produc->imagen = $request->file('imagen')->store('public/productos');
+        }
         $produc->save();
         return 'Guardado con éxito';
     }
@@ -42,7 +46,8 @@ class ProductosController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $produc = Producto::find($id);
+        return view('productos.show', compact('produc'));
     }
 
     /**
