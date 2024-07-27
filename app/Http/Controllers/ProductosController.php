@@ -33,7 +33,7 @@ class ProductosController extends Controller
         $produc->nombre = $request->input('nombre');
         $produc->stock = $request->input('stock');
         $produc->precio = $request->input('precio');
-        $produc->descripcion = $request->input('descripcion');
+        $produc->descripcion = $request->textarea('descripcion');
         if($request->hasFile('imagen')){
             $produc->imagen = $request->file('imagen')->store('public/productos');
         }
@@ -55,7 +55,8 @@ class ProductosController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $produc = Producto::find($id);
+        return view('productos.edit', compact('produc'));
     }
 
     /**
@@ -63,7 +64,13 @@ class ProductosController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $produc = Producto::find($id);
+        $produc->fill($request->except('imagen'));
+        if ($request->hasFile('imagen')){
+            $produc->imagen = $request->file('imagen')->store('public/productos');
+            $produc->save();
+            return 'Producto actualizado';
+        }
     }
 
     /**
