@@ -4,15 +4,17 @@
 
 @section('content')
 <section class="titulo"><h2>Nuevo empleado</h2></section>
+
+
 <form class="formulario" action="/empleados" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="col-6">
       <label for="nombres" class="form-label">Nombres</label>
-      <input type="text" class="form-control" name="nombre" id="inputEmail4">
+      <input type="text" class="form-control" name="nombres" id="inputEmail4">
     </div>
     <div class="col-6">
       <label for="apellidos" class="form-label">Apellidos</label>
-      <input type="text" class="form-control" id="inputPassword4">
+      <input type="text" class="form-control" id="inputPassword4" name="apellidos">
     </div>
     <div class="col-6">
       <label for="cedula" class="form-label">Numero de identificación</label>
@@ -46,7 +48,7 @@
     <div class="col-6">
         <label for="imagen" class="form-label">Cargar foto</label>
         <br>
-        <input type="file"  name="imagen" id="imagen">
+        <input type="file"  name="fotocarnet" id="imagen">
     </input>
       </div>
     </div>

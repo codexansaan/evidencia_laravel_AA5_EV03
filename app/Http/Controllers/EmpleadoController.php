@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Empleado;
 use Illuminate\Http\Request;
 
 class EmpleadoController extends Controller
@@ -27,8 +28,23 @@ class EmpleadoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $emplead = new Empleado();
+        $emplead->nombres = $request->input('nombres');
+        $emplead->apellidos = $request->input('apellidos');
+        $emplead->cedula = $request->input('cedula');
+        $emplead->cargo = $request->input('cargo');
+        $emplead->salario = $request->input('salario');
+        $emplead->turno = $request->input('turno');
+        $emplead->fechaingreso = $request->input('fechaingreso');
+        $emplead->email = $request->input('email');
+        if($request->hasFile('fotocarnet')){
+            $emplead->fotocarnet = $request->file('fotocarnet')->store('/resources/img/empleadofotocarne');
+        }
+        $emplead->save();
+        return redirect()->back()->with('success', 'Datos guardados con éxito!');
+
     }
+
 
     /**
      * Display the specified resource.

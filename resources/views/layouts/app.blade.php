@@ -35,7 +35,7 @@
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Responsabilidad Social</a>
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Ingresar</a>
                       </li>
                     </ul>
                     <form class="d-flex">

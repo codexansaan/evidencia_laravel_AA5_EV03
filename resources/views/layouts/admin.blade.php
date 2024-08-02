@@ -13,8 +13,8 @@
             <img src="{{asset('/storage/productos/Boulevar.jpg')}}" alt="">
             <div class="enlaces">
                 <a href=""><span class="fa-solid fa-house"></span> Inicio</a>
-                <a href="/productos"><span class="fa-solid fa-cart-shopping"></span> Productos</a>
-                <a href=""><span class="fas fa-users"></span> Nosotros</a>
+                <a href="/productos"><i class="fa-solid fa-briefcase"></i> Productos</a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i> Punto de venta</a>
                 <a href=""><span class="fa-solid fa-address-book"></span> Empleados</a>
                 <a href=""><span class="fa-solid fa-cart-flatbed"></span> Materia prima</a>
             </div>

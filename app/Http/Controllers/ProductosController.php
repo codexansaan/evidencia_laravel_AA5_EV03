@@ -33,7 +33,7 @@ class ProductosController extends Controller
         $produc->nombre = $request->input('nombre');
         $produc->stock = $request->input('stock');
         $produc->precio = $request->input('precio');
-        $produc->descripcion = $request->textarea('descripcion');
+        $produc->descripcion = $request->input('descripcion');
         if($request->hasFile('imagen')){
             $produc->imagen = $request->file('imagen')->store('public/productos');
         }
