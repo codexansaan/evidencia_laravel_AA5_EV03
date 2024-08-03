@@ -51,7 +51,9 @@ class EmpleadoController extends Controller
      */
     public function show(string $id)
     {
-        //
+        //leer empleado
+        $emplead = Empleado::find($id);
+        return view('empleados.show', compact('emplead'));
     }
 
     /**
