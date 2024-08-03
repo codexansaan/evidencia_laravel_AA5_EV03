@@ -12,7 +12,8 @@ class EmpleadoController extends Controller
      */
     public function index()
     {
-        //
+        $emplead = Empleado::all();
+        return view('empleados.index', compact('emplead'));
     }
 
     /**
@@ -61,7 +62,8 @@ class EmpleadoController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $emplead = Empleado::find($id);
+        return view('empleados.edit', compact('emplead'));
     }
 
     /**
@@ -69,7 +71,13 @@ class EmpleadoController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $emplead = Empleado::find($id);
+        $emplead->fill($request->except('fotocarnet'));
+        if ($request->hasFile('fotocarnet')){
+            $emplead->fotocarnet = $request->file('fotocarnet')->store('/resources/img/empleadofotocarne');
+            $emplead->save();
+            return 'Empleado actualizado';
+        }
     }
 
     /**

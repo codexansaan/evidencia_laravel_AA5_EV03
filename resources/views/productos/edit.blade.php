@@ -34,7 +34,7 @@
     </div>
     <div class="col-12">
         <button type="submit" class="btn">Guardar cambios</button>
-      </div>
+    </div>
 
 
 @endsection

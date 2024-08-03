@@ -25,8 +25,12 @@
       <input type="text" class="form-control" id="salario" name="salario">
     </div>
     <div class="col-6">
-      <label for="turno" class="form-label">Turno</label>
-      <input type="text" class="form-control" id="turno" name="turno">
+        <label for="turno" class="form-label">Turno</label>
+        <select class="form-select" id="turno" name="turno">
+            <option selected>Choose...</option>
+            <option value="mañana">Mañana</option>
+          <option value="tarde">Tarde</option>
+        </select>
     </div>
     <div class="col-6">
       <label for="cargo" class="form-label">Cargo</label>
@@ -35,6 +39,7 @@
         <option>Mesero</option>
         <option>Ayudante de cocina</option>
         <option>Panadero/Pizzero</option>
+        <option>Caja</option>
       </select>
     </div>
     <div class="col-6">

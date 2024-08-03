@@ -143,6 +143,10 @@ nav .sociales a:hover{
 
 }
 
+.form-select{
+    width: 45%;
+}
+
 .btn{
     padding: 0.25%;
     margin-left: 230px;
@@ -156,6 +160,33 @@ nav .sociales a:hover{
     border: 0;
 }
 
+
+
+
+.tabla{
+    border: solid #5e0303;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px #5e0303;
+    width: 100%;
+
+}
+
+
+th, td{
+  border-top: 1px solid #b32424;
+  padding: 8px;
+  text-align:left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;}
+
+
 .carnet {
     width: 400px;
     height: 200px;
@@ -165,6 +196,7 @@ nav .sociales a:hover{
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 
 
 

@@ -7,9 +7,12 @@
 
 <div class="carnet">
 
+    <div>
+
+    </div>
     <div class="informacion">
-        <p>{{$emplead->nombres}}</p>
-        <p>{{$emplead->cedula}}</p>
+        <p></p>
+        <p></p>
     </div>
 </div>
 
