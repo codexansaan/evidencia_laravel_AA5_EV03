@@ -39,7 +39,7 @@ class EmpleadoController extends Controller
         $emplead->fechaingreso = $request->input('fechaingreso');
         $emplead->email = $request->input('email');
         if($request->hasFile('fotocarnet')){
-            $emplead->fotocarnet = $request->file('fotocarnet')->store('/resources/img/empleadofotocarne');
+            $emplead->fotocarnet = $request->file('fotocarnet')->store('public/empleadofotocarne');
         }
         $emplead->save();
         return redirect()->back()->with('success', 'Datos guardados con éxito!');
@@ -74,7 +74,7 @@ class EmpleadoController extends Controller
         $emplead = Empleado::find($id);
         $emplead->fill($request->except('fotocarnet'));
         if ($request->hasFile('fotocarnet')){
-            $emplead->fotocarnet = $request->file('fotocarnet')->store('/resources/img/empleadofotocarne');
+            $emplead->fotocarnet = $request->file('fotocarnet')->store('public/empleadofotocarne');
             $emplead->save();
             return 'Empleado actualizado';
         }

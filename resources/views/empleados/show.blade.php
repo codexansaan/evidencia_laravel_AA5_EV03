@@ -7,7 +7,7 @@
 
 <div class="carnet">
     <div class="image-container">
-        <img class="employee-image" src="{{ Storage::url("app/". $emplead->fotocarnet) }}" alt="Foto de perfil">
+        <img class="employee-image" src="{{ Storage::url($emplead->fotocarnet) }}" alt="Foto de perfil">
     </div>
     <div class="info-container">
         <h2>{{ $emplead->nombres }} {{ $emplead->apellidos }}</h2>
