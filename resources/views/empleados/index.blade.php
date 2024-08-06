@@ -34,10 +34,15 @@
                 <td>{{ $empleadvisto->email }}</td>
                 <td>
                     <a href="/empleados/{{$empleadvisto->id}}/edit" class="btn_editar">Editar <a href="/empleados/{{$empleadvisto->id}}/" class="btn_editar">Ver</a></a>
+                    <td>
+                        <form action="{{ route('empleados.destroy', $empleadvisto->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn_editar">Eliminar</button>
+                        </form>
 
-                </td>
-
-            </tr>
+                    </td>
+                </tr>
         @endforeach
     </tbody>
 </table>

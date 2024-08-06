@@ -188,12 +188,12 @@ tr:nth-child(even){
 
 
 .carnet {
-    width: 400px;
+    width: 450px;
     height: 200px;
     background-color: #f0f0f0;
     border: 2px solid #8a1313;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     display: flex;
 }
