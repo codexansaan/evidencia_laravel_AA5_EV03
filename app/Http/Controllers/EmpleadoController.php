@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Empleado;
 use Illuminate\Http\Request;
 
+
 class EmpleadoController extends Controller
 {
     /**
@@ -85,6 +86,16 @@ class EmpleadoController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $empleado = Empleado::find($id);
+
+        if (!$empleado) {
+            return redirect()->back()->with('error', 'Empleado no encontrado');
+        }
+
+        $empleado->delete(); // Utiliza delete() para SoftDeletes, forceDelete() para eliminación permanente
+
+        return redirect()->route('empleados.index')->with('success', 'Empleado eliminado correctamente');
+
+
     }
 }

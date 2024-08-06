@@ -33,14 +33,18 @@
                 <td>{{ $empleadvisto->fechaingreso }}</td>
                 <td>{{ $empleadvisto->email }}</td>
                 <td>
-                    <a href="/empleados/{{$empleadvisto->id}}/edit" class="btn_editar">Editar <a href="/empleados/{{$empleadvisto->id}}/" class="btn_editar">Ver</a></a>
-
+                    <a href="/empleados/{{$empleadvisto->id}}/" class="btn_ver">Ver</a>
+                    <a href="/empleados/{{$empleadvisto->id}}/edit" class="btn_editar">Editar </a>
+                    <form action="{{ route('empleados.destroy', $empleadvisto->id) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn_eliminar">Eliminar</button>
+                    </form>
                 </td>
-
-            </tr>
+                </tr>
         @endforeach
     </tbody>
 </table>
-<a href="/empleados/create" class="btn_editar">Crear empleado</a>
+<a href="/empleados/create" class="btn_crear">Crear empleado</a>
 
 @endsection

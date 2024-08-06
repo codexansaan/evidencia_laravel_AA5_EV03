@@ -188,12 +188,12 @@ tr:nth-child(even){
 
 
 .carnet {
-    width: 400px;
+    width: 450px;
     height: 200px;
     background-color: #f0f0f0;
     border: 2px solid #8a1313;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     display: flex;
 }
@@ -218,11 +218,47 @@ tr:nth-child(even){
     background-color: #d1b36d; /* Verde */
   border-radius: 10px;
   color: rgb(188, 30, 30);
-  padding: 10px 16px;
+  padding: 5px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+}
+
+.btn_ver{
+    background-color: #e1640b; /* Verde */
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn_eliminar{
+    background-color: #ea0b0b; /* Verde */
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  padding: 4px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn_crear{
+    background-color: #3b58d7; /* Verde */
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 20px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
 }
 
