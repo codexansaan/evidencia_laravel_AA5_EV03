@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>Empleados - @yield('empleado')</title>
+    <title>Administracion - @yield('admin')</title>
     @vite(['resources/css/admin.css'])
     @vite(['node_modules/@fortawesome/fontawesome-free/css/all.css'])
     </head>
@@ -15,7 +15,7 @@
                 <a href=""><span class="fa-solid fa-house"></span> Inicio</a>
                 <a href="/productos"><i class="fa-solid fa-briefcase"></i> Productos</a>
                 <a href=""><i class="fa-solid fa-cart-shopping"></i> Punto de venta</a>
-                <a href=""><span class="fa-solid fa-address-book"></span> Empleados</a>
+                <a href="/empleados"><span class="fa-solid fa-address-book"></span> Empleados</a>
                 <a href=""><span class="fa-solid fa-cart-flatbed"></span> Materia prima</a>
             </div>
             <div class="sociales">
