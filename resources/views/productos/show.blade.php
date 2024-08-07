@@ -4,15 +4,20 @@
 
 @section('content')
 
-<div class="text-center">
+<div class="show">
+    <div class="columna1">
     <h3 class="TituloVista">{{$produc->nombre}}</h3>
-    <img style="height: 600px; width:400px; margin:20px" src="{{ Storage::url($produc->imagen) }}" class="card-img-top mx-auto d-block" alt="...">
-    <div class="card-body">
+    <img src="{{ Storage::url($produc->imagen) }}" class="imagen" alt="
+    {{($produc->nombre)}}">
+    </div>
+    <div class="vista">
+    <div class="parrafo">
         <p class="card-text">Descripción: {{$produc->descripcion}}</p>
     </div>
-    <br>
-    <a href="/productos/{{$produc->id}}/edit" class="btn">Editar producto</a>
-
+    <div>
+    <button href="/productos/{{$produc->id}}/edit" class="btnshow">Editar producto</button>
+    </div>
+    </div>
 </div>
 
 @endsection

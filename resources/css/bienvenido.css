@@ -1,19 +1,21 @@
 @import '@fortawesome/fontawesome-free/css/all.css';
+
 @font-face {
     font-family: 'LibreBodoni';
     src: url('/fonts/LibreBodoni-Italic.ttf') format('truetype'),
-    url('/fonts/LibreBodoni-Bold.ttf') format('truetype'),
-    url('/fonts/LibreBodoni-SemiBoldItalic.ttf') format('truetype');
+        url('/fonts/LibreBodoni-Bold.ttf') format('truetype'),
+        url('/fonts/LibreBodoni-SemiBoldItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: normal;
 }
-*{
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 5;
 }
 
-.barra{
+.barra {
     background-color: rgb(161, 20, 25);
     font-family: 'LibreBodoni';
     font-size: 1.5em;
@@ -27,12 +29,13 @@
 
 }
 
-.barra a{
+.barra a {
     text-decoration: none;
     color: white;
+
 }
 
-.barra a:hover{
+.barra a:hover {
     background: rgb(207, 88, 92);
 }
 
@@ -43,43 +46,50 @@
 
 
 
-footer{
+footer {
     width: 60%;
     height: 15%;
     border: 2px solid rgb(161, 20, 25);
 }
 
-.pie{
+.pie {
     display: flex;
     justify-content: center;
 }
 
-footer .container{
+footer .container {
     display: flex;
     justify-content: space-around;
 
 }
 
-.enlace{
+.enlace {
     font-family: "LibreBodoni";
     font-size: large;
+    color: rgb(133, 1, 6);
 }
 
 
-.vinculo a{
+.vinculo a {
     text-decoration: none;
     font-family: "LibreBodoni";
     font-weight: 600;
     color: rgb(161, 20, 25);
     font-size: 90%;
 }
-li{
-    list-style-type:none;
+
+.vinculo a:hover {
+    color: rgb(207, 88, 92);
 }
 
-.derechos{
+ul li {
+    list-style-type: none;
+    margin-bottom: 5%;
+}
+
+
+
+.derechos {
     display: flex;
     justify-content: center;
 }
-
-

@@ -23,11 +23,17 @@
             <button type="submit">Buscar</button>
         </div>
     </nav>
+    <div class="contenido">
+        
+
+
+
+    </div>
 
 
     <div class="pie">
-    <footer>
-        <div class="container">
+        <footer>
+            <div class="container">
                 <div>
                     <h5 class="enlace">Enlaces</h5>
                     <ul class="vinculo">
@@ -58,15 +64,15 @@
                 </div>
             </div>
             <div class="derechos">
-                    <p class="mb-0">&copy; 2024 Boulevar de las Frutas. Todos los derechos reservados.</p>
+                <p class="mb-0">&copy; 2024 Boulevar de las Frutas. Todos los derechos reservados.</p>
             </div>
-    </footer>
-</div>
+        </footer>
+    </div>
 
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
