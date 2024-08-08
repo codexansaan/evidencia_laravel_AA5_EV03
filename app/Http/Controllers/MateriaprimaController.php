@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Materiaprima;
 use Illuminate\Http\Request;
 
 class MateriaprimaController extends Controller
@@ -19,7 +20,7 @@ class MateriaprimaController extends Controller
      */
     public function create()
     {
-        //
+        return view('materiaprima.create');
     }
 
     /**
@@ -27,7 +28,15 @@ class MateriaprimaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
+        $materia = new Materiaprima();
+        $materia->nombre = $request->input('nombre');
+        $materia->sotck = $request->input('stock');
+        $materia->unidadmedida = $request->input('unidadmedida');
+        $materia->preciounidad = $request->input('preciounidad');
+
+        $materia->save();
+        return redirect()->back()->with('success', 'Datos guardados con éxito!');
     }
 
     /**

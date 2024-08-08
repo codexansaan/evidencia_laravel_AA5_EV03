@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Materiaprima extends Model
 {
     use HasFactory;
+    protected $fillable = ['nombre', 'stock', 'unidadmedida', 'preciounidad'];
 }

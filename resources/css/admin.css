@@ -268,3 +268,27 @@ tr:nth-child(even){
     cursor: pointer;
 }
 
+.contenido{
+    margin: 1%;
+}
+
+.materia{
+    padding: 1%;
+    border: 2px solid rgb(161, 20, 25);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+.btn_materia{
+    margin-top: 1%;
+    color: rgb(161, 20, 25);
+    border: 0;
+}
+
+.btn_materia:hover{
+    transform: scale(0.8);
+}
+
+

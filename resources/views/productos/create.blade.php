@@ -10,7 +10,7 @@
     <h3 class="TituloVista">Crear producto</h3>
     <div class="col-md-4">
       <label for="nombre" class="form-label">Nombre</label>
-      <input type="string" class="form-control" name="nombre" id="nombre">
+      <input type="text" class="form-control" name="nombre" id="nombre">
     </div>
     <div class="col-md-3">
       <label for="precio" class="form-label">Precio</label>

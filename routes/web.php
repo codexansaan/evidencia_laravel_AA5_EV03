@@ -14,11 +14,10 @@ Route::get('/administracion', function () {
     return view('administracion');
 });
 
-
-Route::get('/mensaje', [ControladorProductos::class, 'mensaje']);
-
 Route::resource('/productos', ProductosController::class);
 
 Route::resource('/empleados', EmpleadoController::class);
 
 Route::resource('/materiaprimas', MateriaprimaController::class);
+
+
