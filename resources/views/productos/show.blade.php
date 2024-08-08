@@ -6,11 +6,12 @@
 
 <div class="show">
     <div class="columna1">
-    <h3 class="TituloVista">{{$produc->nombre}}</h3>
+
     <img src="{{ Storage::url($produc->imagen) }}" class="imagen" alt="
     {{($produc->nombre)}}">
     </div>
     <div class="vista">
+    <h3 class="TituloVista">{{$produc->nombre}}</h3>
     <div class="parrafo">
         <p class="card-text">Descripción: {{$produc->descripcion}}</p>
     </div>

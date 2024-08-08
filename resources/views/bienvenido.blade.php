@@ -17,14 +17,14 @@
         <a href="#">Galeria</a>
         <a href="#">Contacto</a></li>
         <a href="#">Turismo local</a>
-        <a href="#">Ingresar</a>
+        <a href="/administracion">Ingresar</a>
         <div>
             <input type="search" placeholder="Buscar">
             <button type="submit">Buscar</button>
         </div>
     </nav>
     <div class="contenido">
-        
+
 
 
 

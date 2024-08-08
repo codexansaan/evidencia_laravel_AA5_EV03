@@ -16,7 +16,7 @@
             </div>
             <div class="enlaces">
 
-                <a href=""><i class="fa-solid fa-house"></i>Inicio</a>
+                <a href="/"><i class="fa-solid fa-house"></i>Inicio</a>
 
                 <a href="/productos"><i class="fa-solid fa-briefcase"></i>Productos</a>
 
