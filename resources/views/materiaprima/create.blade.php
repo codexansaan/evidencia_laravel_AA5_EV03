@@ -1,14 +1,14 @@
 @extends('layouts.admin')
 
 
-
+@section('materiaprima', 'Crear Materia Prima')
 @section('content')
 
 <div class="contenido">
     <h2 class="titulo">
         Crear materia prima
     </h2>
-    <form class="materia" action="/materiaprimas" method="POST">
+    <form class="materia" action="/materiaprimas" method="POST" enctype="multipart/form-data">
         @csrf
         <div>
         <label class="form-label" for="nombre">Nombre</label>
@@ -36,8 +36,11 @@
             <label class="form-label" for="preciounidad">Precio de unidad</label>
             <input type="double" name="preciounidad"></input>
         </div>
+        <div class="btn-sub">
+        <button type="submit" class="btn_materia"><i class="fa-solid fa-floppy-disk fa-3x"></i></button>
+        </div>
     </form>
-    <button type="submit" class="btn_materia"><i class="fa-solid fa-floppy-disk fa-3x"></i></button>
+
 </div>
 
 
