@@ -39,7 +39,7 @@
         <option>Mesero</option>
         <option>Ayudante de cocina</option>
         <option>Panadero/Pizzero</option>
-        <option>Caja</option>
+        <option>Cajero</option>
       </select>
     </div>
     <div class="col-6">

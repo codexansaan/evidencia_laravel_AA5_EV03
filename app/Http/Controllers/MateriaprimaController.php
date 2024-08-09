@@ -28,15 +28,22 @@ class MateriaprimaController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
-        $materia = new Materiaprima();
-        $materia->nombre = $request->input('nombre');
-        $materia->sotck = $request->input('stock');
-        $materia->unidadmedida = $request->input('unidadmedida');
-        $materia->preciounidad = $request->input('preciounidad');
+        $request->validate([
+            'nombre' => 'required|string|max:100',
+            'stock' => 'required|numeric',
+            'unidadmedida' => 'required|string',
+            'preciounidad' => 'required|numeric',
+        ]);
 
-        $materia->save();
-        return redirect()->back()->with('success', 'Datos guardados con éxito!');
+        try {
+            $materia = new Materiaprima();
+            $materia->fill($request->all());
+            $materia->save();
+
+            return redirect()->back()->with('success', 'La materia prima se ha creado correctamente.');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'Ocurrió un error al guardar la materia prima.');
+        }
     }
 
     /**
