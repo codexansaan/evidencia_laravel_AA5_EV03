@@ -23,7 +23,7 @@
                     <td>Stock</td>
                     <td>Unidad de medida</td>
                     <td>Precio de unidad</td>
-                    </tr>
+                </tr>
             @endforeach
         </tbody>
     </table>
