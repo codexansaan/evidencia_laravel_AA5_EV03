@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@extends('materiaprimas', 'Materia prima')
+@section('materiaprima', 'Crear Materia Prima')
 
 @section('content')
 
@@ -11,18 +11,26 @@
     <table class="table">
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Nombre</th>
-                <th>Descripción</th>
+                <th>Stock</th>
+                <th>Unidad de medida</th>
+                <th>Precio unidad</th>
                 </tr>
         </thead>
         <tbody>
-            @foreach ($materiasPrimas as $materiaPrima)
+            @foreach ($materia as $materias)
                 <tr>
-                    <td>ID</td>
-                    <td>Nombre</td>
-                    <td>Stock</td>
-                    <td>Unidad de medida</td>
-                    <td>Precio de unidad</td>
+                    <td>{{ $materias->id }}</td>
+                    <td>{{ $materias->nombre }}</td>
+                    <td>{{ $materias->stock }}</td>
+                    <td>{{ $materias->unidadmedida }}</td>
+                    <td>{{ $materias->preciounidad }}</td>
+                    <td>
+                        <a href="/materiaprimas/{{$materias->id}}" class="btn_ver">Detalles</a>
+                        <a href="/materiaprimas/{{$materias->id}}/edit" class="btn_editar">Editar</a>
+                        <a href="/" class="btn_eliminar">Eliminar</a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>

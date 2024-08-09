@@ -12,7 +12,9 @@ class MateriaprimaController extends Controller
      */
     public function index()
     {
-        //
+        $materia = Materiaprima::all();
+        return view('materiaprima.index', compact('materia'));
+
     }
 
     /**
@@ -51,7 +53,7 @@ class MateriaprimaController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view('materiaprima.show');
     }
 
     /**

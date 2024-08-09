@@ -33,7 +33,7 @@
                 <td>{{ $empleadvisto->fechaingreso }}</td>
                 <td>{{ $empleadvisto->email }}</td>
                 <td>
-                    <a href="/empleados/{{$empleadvisto->id}}/" class="btn_ver">Ver</a>
+                    <a href="/empleados/{{$empleadvisto->id}}" class="btn_ver">Ver</a>
                     <a href="/empleados/{{$empleadvisto->id}}/edit" class="btn_editar">Editar </a>
                     <form action="{{ route('empleados.destroy', $empleadvisto->id) }}" method="POST">
                         @csrf
