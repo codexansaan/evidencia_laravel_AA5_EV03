@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@extends('titulo', 'Materia prima')
+@extends('materiaprimas', 'Materia prima')
 
 @section('content')
 

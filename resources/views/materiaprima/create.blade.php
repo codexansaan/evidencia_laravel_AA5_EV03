@@ -36,8 +36,9 @@
             <label class="form-label" for="preciounidad">Precio de unidad</label>
             <input type="double" name="preciounidad"></input>
         </div>
+        <button type="submit" class="btn_materia"><i class="fa-solid fa-floppy-disk fa-3x"></i></button>
     </form>
-    <button type="submit" class="btn_materia"><i class="fa-solid fa-floppy-disk fa-3x"></i></button>
+
 </div>
 
 

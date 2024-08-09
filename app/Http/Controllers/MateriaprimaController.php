@@ -28,7 +28,6 @@ class MateriaprimaController extends Controller
      */
     public function store(Request $request)
     {
-<<<<<<< HEAD
         $request->validate([
             'nombre' => 'required|string|max:100',
             'stock' => 'required|numeric',
@@ -45,9 +44,6 @@ class MateriaprimaController extends Controller
         } catch (\Exception $e) {
             return redirect()->back()->with('error', 'Ocurrió un error al guardar la materia prima.');
         }
-=======
-       
->>>>>>> cd928b97d1c1ee113643564d935d0b6bd28e7827
     }
 
     /**

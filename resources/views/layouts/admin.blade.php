@@ -24,7 +24,7 @@
 
                 <a href="/empleados"><i class="fa-solid fa-address-book"></i>Empleados</a>
 
-                <a href="/materiaprimas/create"><i class="fa-solid fa-cart-flatbed"></i>Materia prima</a>
+                <a href="/materiaprimas"><i class="fa-solid fa-cart-flatbed"></i>Materia prima</a>
             </div>
             <div class="sociales">
                 <a href=""><span class="fab fa-facebook"></span></a>
