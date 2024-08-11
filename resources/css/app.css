@@ -138,3 +138,15 @@ li a{
     font-weight: 700;
     color: rgb(161, 20, 25);
 }
+
+.btn_force{
+    margin-top: 1%;
+    padding: 0.5%;
+    background: rgb(161, 20, 25);
+    font-weight: 800;
+    border-radius: 10px;
+    color: white;
+    font-family: "LibreBodoni";
+}
+
+

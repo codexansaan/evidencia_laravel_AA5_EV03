@@ -17,6 +17,11 @@
     </div>
     <div>
     <button href="/productos/{{$produc->id}}/edit" class="btnshow">Editar producto</button>
+    <form action="{{ route('productos.destroy', $produc->id) }}" method="POST" id="btn-eliminar">
+        @csrf
+        @method('DELETE')
+        <button  type="submit" class="btn_force"  onclick="confirmDelete()">Eliminar</button>
+    </form>
     </div>
     </div>
 </div>

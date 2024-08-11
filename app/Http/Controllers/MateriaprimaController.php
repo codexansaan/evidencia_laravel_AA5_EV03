@@ -53,7 +53,8 @@ class MateriaprimaController extends Controller
      */
     public function show(string $id)
     {
-        return view('materiaprima.show');
+        $materia = Materiaprima::find($id);
+        return view('materiaprima.show', compact('materia'));
     }
 
     /**
@@ -61,7 +62,8 @@ class MateriaprimaController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $materia = Materiaprima::find($id);
+        return view('materiaprima.edit', compact('materia'));
     }
 
     /**
@@ -77,6 +79,16 @@ class MateriaprimaController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $materia = Materiaprima::find($id);
+
+        if (!$materia) {
+            return redirect()->route('materiaprimas.index')->with('error', 'Empleado no encontrado');
+        }
+
+        $materia->forceDelete();
+
+    return redirect()->route('materiaprimas.index')->with('success', 'Eliminado exitosamente');
+
+
     }
 }

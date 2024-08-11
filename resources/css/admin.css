@@ -42,6 +42,11 @@ nav{
     flex-direction: column;
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
 nav img{
     width: 65%;
     padding: 20px;
@@ -106,8 +111,8 @@ nav .sociales a:hover{
 }
 
 .content {
-    margin-left: 190px; /* Deja espacio para el nav fijo y un pequeño margen adicional */
-    padding: 20px;
+    margin-left: 15%; /* Deja espacio para el nav fijo y un pequeño margen adicional */
+    padding: 0.5%;
 }
 
 .titulo{
@@ -180,10 +185,11 @@ nav .sociales a:hover{
 
 
 th, td{
-  border-top: 1px solid #b32424;
-  padding: 8px;
-  text-align:left;
-}
+    border-top: 1px solid #b32424;
+    padding: 8px;
+    text-align:left;
+    font-size: 1.25rem;
+  }
 
 th {
   background-color: #f2f2f2;
@@ -290,5 +296,89 @@ tr:nth-child(even){
 .btn_materia:hover{
     transform: scale(0.8);
 }
+
+
+.detalle{
+    padding: 1%;
+
+
+}
+
+.titulo_detalle{
+    color: white;
+    background: rgb(161, 20, 25);
+    border-radius: 5px;
+    padding: 0.5%;
+    text-align: center;
+}
+
+.detalle_propie{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1%;
+    width: 30%;
+    border: 2px solid rgb(161, 20, 25);
+    height: 75%;
+    border-radius: 15px;
+
+}
+
+.propiedades{
+    color: rgb(182, 49, 53);
+    font-size: 1.75rem;
+    text-decoration: underline;
+
+}
+
+
+.propie_instancia{
+    color: rgb(161, 20, 25);
+    font-size: 1.75rem;
+    padding-bottom: 3%;
+}
+
+.table_materia{
+    margin-top: 1%;
+    padding: 0.5%;
+    width: 80%;
+    border: 3px solid rgb(161, 20, 25);
+    border-radius: 25px;
+}
+
+.materiaprima{
+    padding: 2%;
+    font-size: 1.5rem;
+
+}
+
+.btn_crear{
+    margin-top: 1%;
+    background: rgb(161, 20, 25);
+    font-weight: 800;
+
+}
+.botonesmate{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn_force{
+    padding: 8%;
+    background: rgb(161, 20, 25);
+    font-weight: 800;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn_force:hover{
+    background: rgb(221, 65, 70);
+}
+
+
+
 
 

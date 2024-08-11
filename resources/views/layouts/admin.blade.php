@@ -5,6 +5,7 @@
     <title>Administracion - @yield('admin')</title>
     @vite(['resources/css/admin.css'])
     @vite(['node_modules/@fortawesome/fontawesome-free/css/all.css'])
+    @vite(['resources/js/app.js'])
     </head>
     <body>
 
@@ -12,7 +13,7 @@
 
         <nav>
             <div class="logo">
-            <img src="{{asset('/storage/productos/Boulevar.jpg')}}" alt="">
+            <img src="{{asset('/storage/productos/Boulevar.jpg')}}" alt="Logo boulevar">
             </div>
             <div class="enlaces">
 

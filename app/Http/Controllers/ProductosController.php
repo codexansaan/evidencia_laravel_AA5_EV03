@@ -78,6 +78,15 @@ class ProductosController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $produc = Producto::find($id);
+
+        if (!$produc) {
+            return redirect()->route('productos.index')->with('error', 'Producto no encontrado');
+        }
+
+        $produc->forceDelete();
+
+    return redirect()->route('productos.index')->with('success', 'Eliminado exitosamente');
+
     }
 }
