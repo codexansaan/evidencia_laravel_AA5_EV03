@@ -12,7 +12,7 @@
 
 <body>
     <nav class="barra">
-        <a href="#">Boulevar de las Frutas</a>
+        <a href="/">Boulevar de las Frutas</a>
         <a href="/productos">Productos</a>
         <a href="#">Galeria</a>
         <a href="#">Contacto</a></li>
@@ -25,7 +25,49 @@
     </nav>
     <div class="contenido">
 
-        
+        <div class="titulo">
+            <h1>Boulevar de las frutas</h1>
+        </div>
+
+        <div class="imagen-bienvenida">
+            <img src="{{asset('/storage/img/imagen_bienvenida_cafe.jpg')}}" alt="imagen café">
+
+        </div>
+
+        <div class="caja-contenido">
+            <h2>Sobre la empresa</h2>
+            <p>El Boulevar de las frutas es un restaurante familiar que tiene 17 años funcionando,
+                creado por Jaime Anacona y su esposa Yaneth Chavarro, quienes llegaron de Colombia
+                a Ecuador en busca de una mejor estabilidad económica para ellos y sus 3 hijos,
+                su propuesta fue un sitio de antojitos colombianos en un pequeño pueblo llamado El Coca,
+                lugar que tuvo gran acogida por su sabor tradicional e innovación ya que no había nada como esto,
+                el negocio creció al igual que sus hijos quienes son los encargados
+                hoy en día de seguir con el legado de sus padres,
+                incluyendo nuevas ideas pero manteniendo la esencia de este agradable lugar.</p>
+        </div>
+
+        <div class="caja-contenido">
+            <h2>Productos y servicios</h2>
+            <p>Tenemos un amplio menú que varia para todos los gustos, nuestros productos van desde comidas rápidas,
+                empanadas colombianas, pan de yuca, batidos, ensaladas de frutas, una gama de cafés fríos y calientes,
+                desayunos, pizzas, pasteles, comida saludable y platos a la carta.
+                Ofrecemos servicios presenciales en nuestro único local, no tenemos proyectado expandirnos,
+                mas bien queremos mantener la calidad y servicio, actualmente tenemos 11 empleados.</p>
+        </div>
+
+        <div class="caja-contenido">
+            <h2>Misión</h2>
+            <p>Somos un restaurante familiar de comidas rápidas, antojitos colombianos y café,
+                creado para dar a conocer estas delicias a cualquiera, queremos cada día mejorar
+                y mantener nuestra calidad y tradición.</p>
+        </div>
+
+        <div class="caja-contenido">
+            <h2>Visión</h2>
+            <p>Proyectarnos como empresa moderna de comidas rápidas, lideres en el mercado del oriente ecuatoriano,
+                mantenernos en constante evolución, adaptandonos a las necesidades cambiantes
+                del entorno para brindar el mejor servicio a nuestros colaboradores y clientes.</p>
+        </div>
 
 
     </div>
