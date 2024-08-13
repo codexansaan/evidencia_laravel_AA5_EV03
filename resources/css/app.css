@@ -76,8 +76,12 @@
     background: rgb(161, 20, 25);
     color: white;
     border-radius: 10px;
-    margin-top: 4%;
+    text-decoration: none;
+    margin-top: 1%;
+    padding: 1%;
+    border: solid 1px black;
 }
+
 .card-title{
     font-family: 'LibreBodoni';
     font-style: Bold;
