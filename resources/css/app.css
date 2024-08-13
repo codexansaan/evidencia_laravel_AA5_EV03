@@ -87,6 +87,7 @@
     font-style: Bold;
     font-weight: 600;
     color: rgb(161, 20, 25);
+    width: 100%;
 }
 .card{
     border: solid 2px rgb(161, 20, 25);
